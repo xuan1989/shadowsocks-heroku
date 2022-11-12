@@ -131,6 +131,8 @@
             remotePort = data.readUInt16BE(2 + addrLen);
             headerLength = 2 + addrLen + 2;
           }
+            console.log("remoteAddr", remoteAddr);
+            console.log("remotePort", remotePort);
           remote = net.connect(remotePort, remoteAddr, function() {
             var i, piece;
             console.log("connecting", remoteAddr);
