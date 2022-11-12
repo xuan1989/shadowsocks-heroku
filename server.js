@@ -1,7 +1,7 @@
 var net = require('net');
 
-var HOST = '127.0.0.1';
-var PORT = 6000;
+var HOST = 'web-production-8c20.up.railway.app';
+var PORT = 443;
 
 // 创建一个TCP服务器实例，调用listen函数开始监听指定端口
 // 传入net.createServer()的回调函数将作为”connection“事件的处理函数
