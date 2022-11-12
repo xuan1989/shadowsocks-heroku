@@ -1,9 +1,9 @@
 {
-  "server": "127.0.0.1",
+  "server": "web-production-8c20.up.railway.app",
   "local_address": "127.0.0.1",
-  "scheme": "ws",
+  "scheme": "wss",
   "local_port": 1080,
-  "remote_port": 80,
+  "remote_port": 443,
   "password": "`try*(^^$some^$%^complex>:<>?~password/",
   "timeout": 600,
   "method": "aes-256-cfb"
