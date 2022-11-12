@@ -182,7 +182,7 @@
           return stage = 4;
         } catch (error) {
           e = error;
-          console.warn(e);
+          console.warn('123', e);
           if (remote) {
             remote.destroy();
           }
@@ -190,15 +190,18 @@
         }
       } else {
         if (stage === 4) {
+          console.warn('222');
           return cachedPieces.push(data);
         }
       }
     });
     ws.on("ping", function() {
+          console.warn('333');
       return ws.pong('', null, true);
     });
     ws._socket.on("drain", function() {
       if (stage === 5) {
+          console.warn('555');
         return remote.resume();
       }
     });
