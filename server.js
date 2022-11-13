@@ -226,7 +226,7 @@
   server.listen(PORT, LOCAL_ADDRESS, function() {
     var address;
     address = server.address();
-    return console.log("server listening at", address);
+    return console.log("server listening at", address, PORT);
   });
 
   server.on("error", function(e) {
