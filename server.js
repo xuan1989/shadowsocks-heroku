@@ -147,9 +147,9 @@
             return stage = 5;
           });
           remote.on("data", function(data) {
-              console.log("remote data", data);
             data = encryptor.encrypt(data);
             if (ws.readyState === WebSocket.OPEN) {
+              console.log("remote data", data);
               ws.send(data, {
                 binary: true
               });
@@ -225,8 +225,7 @@
 
   server.listen(PORT, LOCAL_ADDRESS, function() {
     var address = server.address();
-    var port    = server.port();
-    return console.log("server listening at", address, port);
+    return console.log("server listening at", address);
   });
 
   server.on("error", function(e) {
